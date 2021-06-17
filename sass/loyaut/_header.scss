@@ -1,3 +1,4 @@
+
 .li{position: relative;
 }
 .li::before{
@@ -30,8 +31,7 @@ bottom: 0;
   padding-top: 10px;
   padding-bottom: 10px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  display: flex;
-  align-items: center;
+  @extend %alighn-lsst
 }
 .men .menu-item:not(:last-child) {
   margin-right: 50px;
@@ -52,16 +52,13 @@ bottom: 0;
 .header .conteiner {
   min-height: 80px;
   justify-content: space-between;
-  display: flex;
-  align-items: center;
+  @extend %alighn-lsst
 }
 nav {
-  display: flex;
-  align-items: center;
+  @extend %alighn-lsst
 }
 .menu-list {
-  display: flex;
-  align-items: center;
+  @extend %alighn-lsst
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .lin {

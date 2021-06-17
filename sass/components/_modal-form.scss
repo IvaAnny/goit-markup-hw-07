@@ -31,17 +31,20 @@
   background: rgba(0, 0, 0, 0); 
   border: 1px solid rgba(0, 0, 0, 0.1);
   cursor: pointer;
+  &:hover{box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);}
+ 
+  &:hover .modal-close-button{
+    fill: #2196F3;
   }
+}
   
-  .modal-close:hover{box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);}
+  
   .is-hidden{
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
   }
-  .modal-close:hover .modal-close-button{
-    fill: #2196F3;
-  }
+ 
   
   .text-modal{font-weight: 700;
     font-size: 20px;
@@ -147,6 +150,7 @@
     line-height: 1.7;
     letter-spacing: 0.03em;
     color: #757575;
+    margin-left: 15px;
     }
   
     .submit-button{
@@ -169,4 +173,4 @@
       box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
       border-radius: 4px;}
   
-     .policy{ margin-left: 15px;}
+     
